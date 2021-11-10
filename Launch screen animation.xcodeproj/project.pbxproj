@@ -11,6 +11,8 @@
 		29CB3952273BF49A00910818 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CB3951273BF49A00910818 /* ContentView.swift */; };
 		29CB3954273BF49C00910818 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29CB3953273BF49C00910818 /* Assets.xcassets */; };
 		29CB3957273BF49C00910818 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29CB3956273BF49C00910818 /* Preview Assets.xcassets */; };
+		29CB395E273BF5BA00910818 /* StandartColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CB395D273BF5BA00910818 /* StandartColorsView.swift */; };
+		29CB3960273BFA0600910818 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CB395F273BFA0500910818 /* Icon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		29CB3951273BF49A00910818 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		29CB3953273BF49C00910818 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29CB3956273BF49C00910818 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		29CB395D273BF5BA00910818 /* StandartColorsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandartColorsView.swift; sourceTree = "<group>"; };
+		29CB395F273BFA0500910818 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				29CB394F273BF49A00910818 /* Launch_screen_animationApp.swift */,
+				29CB395D273BF5BA00910818 /* StandartColorsView.swift */,
 				29CB3951273BF49A00910818 /* ContentView.swift */,
+				29CB395F273BFA0500910818 /* Icon.swift */,
 				29CB3953273BF49C00910818 /* Assets.xcassets */,
 				29CB3955273BF49C00910818 /* Preview Content */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				29CB3952273BF49A00910818 /* ContentView.swift in Sources */,
+				29CB395E273BF5BA00910818 /* StandartColorsView.swift in Sources */,
 				29CB3950273BF49A00910818 /* Launch_screen_animationApp.swift in Sources */,
+				29CB3960273BFA0600910818 /* Icon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +274,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Launch screen animation/Preview Content\"";
@@ -286,7 +295,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -295,6 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Launch screen animation/Preview Content\"";
@@ -315,7 +325,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
