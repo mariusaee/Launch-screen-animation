@@ -14,11 +14,12 @@ struct ContentView: View {
         ZStack {
             StandardColorsView()
                 .opacity(animate ? 1 : 0)
-            IconView()
+            Image("Icon")
                 .scaleEffect(animate ? 4 : 1)
                 .opacity(animate ? 0 : 1)
                 .onAppear(perform: animateLaunch)
         }
+        .ignoresSafeArea()
     }
     
     func animateLaunch() {
