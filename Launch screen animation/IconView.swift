@@ -24,10 +24,9 @@ struct IconView: View {
             ForEach(standardColors, id: \.self) { color in
                 RoundedRectangle(cornerRadius: 20)
                     .foregroundColor(color)
-                    .padding(8)
             }
         }
-        .frame(width: 400, height: 400)
+        .frame(width: 200, height: 200)
     }
 }
 

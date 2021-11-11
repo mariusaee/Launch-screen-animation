@@ -8,8 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var animate = false
+    
     var body: some View {
-        StandardColorsView()
+        ZStack {
+            StandardColorsView()
+                .opacity(animate ? 1 : 0)
+            IconView()
+                .scaleEffect(animate ? 4 : 1)
+                .opacity(animate ? 0 : 1)
+                .onAppear(perform: animateLaunch)
+        }
+    }
+    
+    func animateLaunch() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.25) {
+            withAnimation(.easeInOut(duration: 0.45)) {
+                animate.toggle()
+            }
+        }
     }
 }
 
